@@ -268,8 +268,11 @@ public class Sound {
     // - replace the current value with the new value
     // - refresh!
     public void fadeIn(double seconds) {
-
-   
+        int numToChange = (int)Math.round(this.getSamplingRate() * seconds);
+        double factor = 1.0 / numToChange;
+        for(int i = 0; i < numToChange; i++){
+            
+        }
     }
 
 
